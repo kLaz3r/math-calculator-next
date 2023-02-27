@@ -78,7 +78,7 @@ const Calculator = () => {
                 break;
 
             default:
-                if (display === '0') {
+                if (display == '0') {
                     newDisplay = e.target.name;
                 } else {
                     newDisplay = display + e.target.name;
