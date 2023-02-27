@@ -1,0 +1,105 @@
+$light-color: #fff;
+$medium-color: #666;
+$dark-color: #555;
+$darker-color: #333;
+$darkest-color: #222;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.App {
+    text-align: center;
+    background-color: $darker-color;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    color: $light-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    small {
+        margin-top: 2rem;
+        color: $medium-color;
+    }
+    .Calculator {
+        .FlexContainer {
+            display: flex;
+            margin-top: 0rem;
+            flex-direction: row;
+            .Keypad {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                button {
+                    background-color: $dark-color;
+                    color: $light-color;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    margin: 0.2rem;
+                    border: 1px solid $medium-color;
+                    border-radius: 5px;
+                    font-size: 2rem;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                    &:active {
+                        background-color: $medium-color;
+                        opacity: 1;
+                    }
+                }
+            }
+            .Operators {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                button {
+                    background-color: $darkest-color;
+                    color: $light-color;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    margin: 0.2rem;
+                    border: 1px solid $medium-color;
+                    border-radius: 5px;
+                    font-size: 2rem;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                    &:active {
+                        background-color: $medium-color;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .Display {
+            height: 3.5rem;
+            background-color: $darkest-color;
+            border: 1px solid $medium-color;
+            width: 20rem;
+            border-radius: 10px;
+            line-height: 3.5rem;
+            font-size: 2rem;
+        }
+        .Error {
+            border: 1px solid red;
+        }
+        .Info {
+            padding: 0.2rem 0;
+            font-size: 0.7rem;
+            color: $medium-color;
+        }
+    }
+}
+@media (min-width: 1000px) {
+    :root {
+        font-size: 32px;
+    }
+}
