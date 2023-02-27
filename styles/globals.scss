@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-$light-color: #e5e5e5;
-$accent-color: #fca311;
-$dark-color: #14213d;
+$light-color: #cfdbd5;
+$accent-color: #f5cb5c;
+$dark-color: #333533;
 
 * {
     padding: 0;
@@ -38,14 +38,16 @@ $dark-color: #14213d;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 button {
-                    background-color: $accent-color;
+                    background-color: $dark-color;
                     color: $light-color;
                     width: 3.5rem;
                     height: 3.5rem;
                     margin: 0.2rem;
-                    border: 1px solid $accent-color;
+                    border: 0;
+                    border-bottom: 1px solid $accent-color;
                     border-radius: 5px;
                     font-size: 2rem;
+                    outline: none;
                     cursor: pointer;
                     &:hover {
                         opacity: 0.5;
@@ -60,12 +62,13 @@ $dark-color: #14213d;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 button {
-                    background-color: $accent-color;
-                    color: $light-color;
+                    background-color: $dark-color;
+                    color: $accent-color;
                     width: 3.5rem;
                     height: 3.5rem;
                     margin: 0.2rem;
-                    border: 1px solid $accent-color;
+                    border: 0;
+                    border-bottom: 1px solid $light-color;
                     border-radius: 5px;
                     font-size: 2rem;
                     cursor: pointer;
@@ -81,21 +84,21 @@ $dark-color: #14213d;
         }
         .Display {
             height: 3.5rem;
-            background-color: $light-color;
-            border: 1px solid $accent-color;
+            background-color: $dark-color;
+            border-bottom: 1px solid $accent-color;
             width: 19.1rem;
             margin: 0 auto;
             border-radius: 10px;
             line-height: 3.5rem;
             font-size: 1.5rem;
-            color: $dark-color;
+            color: $light-color;
         }
         .Error {
             border: 1px solid red;
         }
         .Info {
             padding: 0.2rem 0;
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             color: $accent-color;
         }
     }
