@@ -1,3 +1,3 @@
 # Simple Math Calculator in Next.js
 
-Deployed on Netlify at: https://calculator-next.netlify.app/
+Deployed on Vercel at: https://math-calculator-next.vercel.app/
